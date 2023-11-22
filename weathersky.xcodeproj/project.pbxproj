@@ -10,7 +10,6 @@
 		E2C660E32B0D9888000C8E49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C660E22B0D9888000C8E49 /* AppDelegate.swift */; };
 		E2C660E52B0D9888000C8E49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C660E42B0D9888000C8E49 /* SceneDelegate.swift */; };
 		E2C660E72B0D9888000C8E49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C660E62B0D9888000C8E49 /* ViewController.swift */; };
-		E2C660EA2B0D9888000C8E49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C660E82B0D9888000C8E49 /* Main.storyboard */; };
 		E2C660EC2B0D988A000C8E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2C660EB2B0D988A000C8E49 /* Assets.xcassets */; };
 		E2C660EF2B0D988A000C8E49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2C660ED2B0D988A000C8E49 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,10 +19,10 @@
 		E2C660E22B0D9888000C8E49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E2C660E42B0D9888000C8E49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E2C660E62B0D9888000C8E49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E2C660E92B0D9888000C8E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E2C660EB2B0D988A000C8E49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2C660EE2B0D988A000C8E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2C660F02B0D988A000C8E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C660F62B0D99C3000C8E49 /* weathersky.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = weathersky.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +55,10 @@
 		E2C660E12B0D9888000C8E49 /* weathersky */ = {
 			isa = PBXGroup;
 			children = (
+				E2C660F62B0D99C3000C8E49 /* weathersky.entitlements */,
 				E2C660E22B0D9888000C8E49 /* AppDelegate.swift */,
 				E2C660E42B0D9888000C8E49 /* SceneDelegate.swift */,
 				E2C660E62B0D9888000C8E49 /* ViewController.swift */,
-				E2C660E82B0D9888000C8E49 /* Main.storyboard */,
 				E2C660EB2B0D988A000C8E49 /* Assets.xcassets */,
 				E2C660ED2B0D988A000C8E49 /* LaunchScreen.storyboard */,
 				E2C660F02B0D988A000C8E49 /* Info.plist */,
@@ -127,7 +126,6 @@
 			files = (
 				E2C660EF2B0D988A000C8E49 /* LaunchScreen.storyboard in Resources */,
 				E2C660EC2B0D988A000C8E49 /* Assets.xcassets in Resources */,
-				E2C660EA2B0D9888000C8E49 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +145,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E2C660E82B0D9888000C8E49 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E2C660E92B0D9888000C8E49 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E2C660ED2B0D988A000C8E49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,6 +280,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = weathersky/weathersky.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TNS44TZY6M;
@@ -297,7 +288,6 @@
 				INFOPLIST_FILE = weathersky/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = weathersky/weathersky.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TNS44TZY6M;
@@ -325,7 +316,6 @@
 				INFOPLIST_FILE = weathersky/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
