@@ -5,6 +5,8 @@
 //  Created by Andres Vidoza on 2023-11-21.
 //
 
+// The Scene Delegate functions were stripped out of App Delegate and put into this specfic file in order allow multiple instances of an app into the same window.
+
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
